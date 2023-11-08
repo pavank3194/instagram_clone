@@ -1,62 +1,27 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import './App.css';
+
+import InstagramLeft from './Main/InstagramLeft';
+import InstagramBody from './Main/InstagramBody';
+import InstagramRight from './Main/InstagramRight';
 
 
 function App() {
   return (
     <div className="instagramClone">
       <div className='instagramLeft'>
-        <div className='instgramLeft_Name'>Instagram</div>
-        <div className='instagramLeft_Links'>
-        
-          <li>
-            <span className="material-symbols-outlined e88a">home</span> 
-            <span>Home</span>
-          </li>
-          <li>            
-          <span className="material-symbols-outlined">search</span> 
-          <span>Search</span>
-          </li>
-          <li>
-          <span className="material-symbols-outlined">Explore</span> 
-          <span>Explore</span>
-          </li>
-          <li>
-          <span className="material-symbols-outlined">slow_motion_video</span>
-          <span>Reels</span>
-          </li>
-          <li>
-            <span className="material-symbols-outlined ">chat</span> 
-            <span>Messages</span>
-          </li>
-          <li>
-          <span className="material-symbols-outlined">favorite</span> 
-          <span>Notifications</span>
-          </li>
-          <li>
-          <span className="material-symbols-outlined">Add_circle</span> 
-          <span>Create</span>
-          </li>
-          <li>
-          <span className="material-symbols-outlined">Account_circle</span> 
-          <span>Profile</span>
-          </li>
-        </div>
-        <div className='instagramLeft_More'>
-          <li>
-            <span className="material-symbols-outlined ">menu</span> 
-            <span>Menu</span>
-          </li>
-        </div>
-        <footer>knx</footer>
+        <InstagramLeft/>
       </div> 
       <div className='instagramLine'>
         {/* Nothing to Write here */}
       </div>
-      <div className='instagramBody'>
-        Body
+      <div className=''>
+        <InstagramBody/>
       </div>
       <div className='instagramRight'>
-        Suggestions
+        <InstagramRight/>
       </div>
     </div>
   );

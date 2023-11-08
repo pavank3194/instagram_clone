@@ -59,7 +59,8 @@ html, body {
 }
 
 .instagramLeft_More {
-  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .material-symbols-outlined {
