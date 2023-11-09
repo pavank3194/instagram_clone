@@ -61,7 +61,7 @@
 .rightNav_suggestions{
     display: grid;
     grid-template-columns: 59% 15%;
-    padding: 22px 0 15px 1px;
+    padding: 18px 0 15px 1px;
 }
 
 .rightNav_SFU{
@@ -71,4 +71,27 @@
 .rightNav_SAll{
     font-size: 14px;
     font-weight: 500;
+}
+
+.rightNav_Extra{
+    margin-top: 30px;
+}
+.rightNav_Extra ul { 
+    /* list-style:none;  */
+    list-style: decimal;   
+    padding-left:0; 
+} 
+.rightNav_Extra ul li{
+    color: rgb(211, 206, 206); 
+    padding-left: 0;
+    display: inline-block;
+    padding: 1px ;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.copyRight{
+    font-weight: 500;
+    color: rgb(211, 206, 206); 
+    font-size: 14px;
 }

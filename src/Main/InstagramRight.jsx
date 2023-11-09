@@ -54,6 +54,23 @@ function Suggestions(props) {
             <div>
                 <Suggestions Content={Json}/>
             </div> 
+            <div className='rightNav_Extra'>
+              <ul>
+                <li className='about'>About .</li>
+                <li>Help .</li>
+                <li>Press .</li>
+                <li>API .</li>
+                <li>Jobs .</li>
+                <li>Privacy .</li>
+                <li>Terms .</li> <br/>
+                <li>Locations .</li>
+                <li>Language .</li>
+                <li>Meta verified</li>
+              </ul>
+            </div>
+            <div>
+              <span className='copyRight'>© 2023 INSTAGRAM FROM META</span>
+            </div>
         </div>
       );
 };
