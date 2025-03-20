@@ -4,14 +4,195 @@ html, body {
     padding: 0;
     overflow: hidden; /* Optional: Hide scrollbars */
   }
+
+  .user-font{
+    --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+  }
+  .three-dots{
+    margin-right: 0px;
+    cursor: pointer;
+  }
 .instagramBody{
     text-align: center;
     align-items: center;
-    display: grid;
-    grid-template-rows: 20% 80%;
+    /* display: grid;
+    grid-template-rows: 20% 80%; */
+    
+    overflow: visible;
+    /* -ms-overflow-style: none;  
+    scrollbar-width: none;  */
 }
 .InstagramBody_Story{
+    display: flex;
     text-align: start;
-    padding: 25px;
-    margin-top: 100px;
+    /* padding: 25px; */
+    margin-top: 50px;
+    margin-bottom: -30px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  
+}
+
+.InstagramBody_Story::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.userStory{
+    padding-right: 12px;
+    padding-left: 12px;
+    height: 50px;
+    width: 50px;
+}
+
+.InstagramBody_Post{
+    padding-left: 15%;
+    padding-right: 15%;
+    /* overflow-y: scroll; */
+    /* -ms-overflow-style: none;  
+    scrollbar-width: none;  */
+    position: absolute;
+    width: 70%;
+}
+
+.InstagramBody_Posts{
+    margin-top: 50px;
+    /* padding-left: 15%;
+    padding-right: 15%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userStory img {
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+} 
+
+
+.pst-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Stick to the left */
+    width: 100%;
+    text-wrap-mode:nowrap;
+}
+
+.pst-header img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.three-dots-container {
+    display: flex;
+    justify-content: flex-end; /* Stick to the right */
+    width: 100%;
+  }
+
+  .user-photo{
+    margin-top: 2%;
+    /* padding-left: 15%;
+    padding-right: 15%; */
+    width: 100%;
+  }
+  .user-photo img{
+    width: -webkit-fill-available;
+    height: 50%;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+  
+.l-c-s-save{
+  /* margin-top: 50px; */
+  /* padding-left: 15%;
+  padding-right: 15%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.l-c-s{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Stick to the left */
+  width: 100%;
+}
+
+.save {
+  display: flex;
+  justify-content: flex-end; /* Stick to the right */
+  width: 100%;
+}
+
+.material-symbols-l-c-s {
+  font-size: 30px; /* Adjust the size as needed */
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.material-symbols-save {
+  font-size: 30px; /* Adjust the size as needed */
+  padding-top: 10px;
+}
+
+
+
+.liked-users {
+  position: relative;
+  display: inline-block;
+}
+
+.accnt-circle{
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  justify-content: flex-start;
+  /* border-left: 3px solid white;
+  border-radius: 50%; */
+}
+.accnt-circle1 {
+  left: 0px; 
+}
+
+.accnt-circle1:nth-child(2) {
+  left: 10px; 
+}
+
+.like-count{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.likes-count-text{
+  position: relative;
+  /* top: 0; */
+  /* left: 0; */
+  font-weight: 500;
+  left: 40px;
+  
+}
+
+
+.comment-section{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Stick to the left */
+  width: 100%;
+}
+
+.comment-section .material-symbols-outlined{
+  font-size: 15px;
+}
+.pst-header .material-symbols-outlined{
+  font-size: 15px;
 }

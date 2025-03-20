@@ -17,7 +17,7 @@ function App() {
       <div className='instagramLine'>
         {/* Nothing to Write here */}
       </div>
-      <div className=''>
+      <div className='body-scroll'>
         <InstagramBody/>
       </div>
       <div className='instagramRight'>
